@@ -135,8 +135,7 @@ margin-top: 100px;
 border-radius: 5px;
 }
 .about{
-width: 700px;
-margin: 0 auto;
+width: 73%;
 margin: 80px;
 padding: 50px;
 background-color: white;
@@ -174,7 +173,7 @@ font-weight: 400;
 }
 .skills-container{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 gap: 24px;
 }
 .skill{
@@ -255,4 +254,68 @@ font-size: 20px;
 }
 .footer textarea::placeholder{
 font-family: "Open Sans", sans-serif;
+}
+/* Footer section ends here */
+
+
+
+
+
+
+
+/*==================== Responsive design starts here (For Mobile)========================= */
+@media screen and (max-width:576px){
+.skills-container, .resume-container, .footer, .about-items, .banner, nav{
+flex-direction: column; 
+}
+.banner{
+flex-direction: column;
+}
+nav{
+margin: 0;
+}
+nav ul{
+flex-direction: column;
+justify-content: center;
+}
+.banner{
+margin: 0;
+}
+.banner-img{
+padding: 0 30px;
+width: calc(100% - 60px);
+}
+.banner-content{
+padding: 30px;
+width: calc(100% - 60px);
+}
+.banner-content h1{
+font-size: 48px;
+}
+.btn-primary {
+margin: 10px 5px 10px 0;
+}
+.about{
+margin: 30px auto;
+padding: 20px;
+}
+.skill, .resume{
+padding: 0 30px;
+}
+.skills-title{
+padding: 30px;
+}
+.skill-para, .para, .section-description{
+text-align: justify;
+}
+.footer-column{
+width: 100%;
+}
+.footer input[type="text"], input[type="email"], textarea{
+width: calc(100% - 60px);
+}
+.footer{
+flex-direction: column;
+padding: 30px;
+}
 }
